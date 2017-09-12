@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>float实现两栏效果 </title>
+  <style>
+  
+  #container::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+aside {
+  border: 1px solid red;
+  width: 100px;
+  height: 300px;
+  float: left;
+}
+
+
+main {
+  border: 1px solid green;
+  height: 250px;
+  margin-left: 110px;
+}
+
+footer {
+  border: 1px solid pink;
+}
+
+
+  
+  </style>
+</head>
+<body>
+<div id="container">
+  <aside>aside</aside>
+  <main>main</main>
+  </div>
+  <footer>footer</footer>
+</body>
+</html>
